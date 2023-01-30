@@ -1,4 +1,4 @@
-package java_tutorial;
+package javaTutorial;
 
 public class ByteVariable {
 
