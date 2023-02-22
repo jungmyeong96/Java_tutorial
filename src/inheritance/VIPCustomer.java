@@ -22,6 +22,11 @@ public class VIPCustomer extends Customer{
 	//	System.out.println("VIPCusomer(int, String) ������ ȣ��");
 	}
 	
+	@Override
+	public String showCustomerInfo(){
+		return super.showCustomerInfo() + " 담당 상담원아이디는  " + agentID + "입니다.";  
+	}
+	
 	public int calcPrice(int price){
 		bonusPoint += price * bonusRatio;
 		return price - (int)(price * saleRatio);
